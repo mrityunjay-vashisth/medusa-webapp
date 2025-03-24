@@ -3,6 +3,7 @@
 import React from 'react';
 import { useAuth } from '../context/AuthContext';
 import '../styles/HomePage.css';
+import { MedusaLogo, MEDUSA_LOGO_CONFIG, LogoPresets } from '../components';
 
 function HomePage() {
   // Get auth context to access the logged-in user information
@@ -19,11 +20,8 @@ function HomePage() {
     <div className="home-page">
       {/* Left sidebar with Medusa branding */}
       <div className="branding-sidebar">
-        <div className="logo">
-          medusa
-          <span className="trademark">™</span>
-        </div>
-      </div>
+              <MedusaLogo {...LogoPresets.sidebar} />
+            </div>
       
       {/* Right side with user information */}
       <div className="content-container">

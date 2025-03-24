@@ -1,8 +1,8 @@
 // src/pages/LoginPage.js
-// Login page component - simplified without React Router
 import React, { useState } from 'react';
 import '../styles/LoginPage.css';
 import { useAuth } from '../context/AuthContext';
+import { MedusaLogo, MEDUSA_LOGO_CONFIG, LogoPresets } from '../components';
 
 function LoginPage() {
   // Form state
@@ -62,16 +62,22 @@ function LoginPage() {
     <div className="login-page">
       {/* Left sidebar with Medusa branding */}
       <div className="branding-sidebar">
-        <div className="logo">
-          medusa
-          <span className="trademark">™</span>
-        </div>
+        <MedusaLogo {...LogoPresets.sidebar} />
       </div>
       
       {/* Right side with login form */}
       <div className="form-container">
         <div className="login-form-wrapper">
-          <h1 className="form-title">Medusa Cloud</h1>
+          <div className="form-header">
+            <div className="form-header-content">
+              <MedusaLogo 
+                {...LogoPresets.formHeader}
+                className="login-form-logo" 
+              />
+              <h1 className="form-title">
+              </h1>
+            </div>
+          </div>
           
           {/* Error message display */}
           {error && <div className="error-message">{error}</div>}

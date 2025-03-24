@@ -45,6 +45,40 @@
   max-width: 24rem;
 }
 
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.form-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-logo {
+  margin-right: 0.5rem;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.form-title .trademark {
+  font-size: 0.5rem;
+  vertical-align: super;
+  margin-left: 2px;
+}
+
 .form-title {
   font-size: 1.5rem;
   font-weight: 600;
