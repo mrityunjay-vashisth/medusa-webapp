@@ -1,0 +1,191 @@
+/* src/styles/HomePage.css */
+
+/* Maintain the same layout structure as the login page */
+.home-page {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  /* Left sidebar with branding - identical to login page */
+  .branding-sidebar {
+    width: 50%;
+    background-color: #0a4a4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  
+  .trademark {
+    font-size: 0.5rem;
+    vertical-align: super;
+    margin-left: 2px;
+  }
+  
+  /* Content container - similar to the form container on login page */
+  .content-container {
+    width: 50%;
+    background-color: #f9fafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .dashboard-wrapper {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 36rem; /* Slightly wider than login form */
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .dashboard-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  .logout-button {
+    padding: 0.5rem 1rem;
+    width: auto;
+    margin-bottom: 0;
+  }
+  
+  /* User information card */
+  .user-card, .response-card {
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .user-card h2, .response-card h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .info-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .info-label {
+    font-weight: 500;
+    width: 100px;
+    color: #4b5563;
+  }
+  
+  .info-value {
+    color: #1f2937;
+    flex: 1;
+  }
+  
+  /* Response data display */
+  .response-data {
+    background-color: #f1f5f9;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 0.875rem;
+    color: #334155;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  
+  /* Loading indicator */
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    gap: 1rem;
+    color: #4b5563;
+  }
+  
+  .loading-spinner {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.25rem solid #e5e7eb;
+    border-top-color: #1d4ed8;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Footer - identical to login page */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .language-selector,
+  .support-link {
+    background: none;
+    border: none;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  .language-selector {
+    color: #4b5563;
+    display: flex;
+    align-items: center;
+  }
+  
+  .language-selector span {
+    margin-right: 0.25rem;
+  }
+  
+  .support-link {
+    color: #2563eb;
+  }
+  
+  /* Responsive styles for mobile */
+  @media (max-width: 768px) {
+    .home-page {
+      flex-direction: column;
+    }
+    
+    .branding-sidebar,
+    .content-container {
+      width: 100%;
+    }
+    
+    .branding-sidebar {
+      height: 120px;
+    }
+  }

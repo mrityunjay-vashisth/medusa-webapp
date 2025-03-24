@@ -1,0 +1,208 @@
+/* Main layout styles */
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Left sidebar with branding */
+.branding-sidebar {
+  width: 50%;
+  background-color: #0a4a4a; /* Teal color similar to the original design */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.trademark {
+  font-size: 0.5rem;
+  vertical-align: super;
+  margin-left: 2px;
+}
+
+/* Form container on the right side */
+.form-container {
+  width: 50%;
+  background-color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.login-form-wrapper {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 24rem;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+/* Error message styling */
+.error-message {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Form controls and inputs */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+label {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.forgot-link {
+  font-size: 0.875rem;
+  color: #2563eb;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  margin-right: 0.5rem;
+}
+
+/* Button styles */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 1rem;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: #1d4ed8;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+}
+
+.btn-primary:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #4b5563;
+  border: 1px solid #d1d5db;
+}
+
+.btn-secondary:hover {
+  background-color: #f9fafb;
+}
+
+.register-link {
+  text-align: center;
+}
+
+.register-link button {
+  color: #2563eb;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-decoration: underline;
+}
+
+/* Footer styling */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.language-selector,
+.support-link {
+  background: none;
+  border: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.language-selector {
+  color: #4b5563;
+  display: flex;
+  align-items: center;
+}
+
+.language-selector span {
+  margin-right: 0.25rem;
+}
+
+.support-link {
+  color: #2563eb;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+  }
+  
+  .branding-sidebar,
+  .form-container {
+    width: 100%;
+  }
+  
+  .branding-sidebar {
+    height: 120px;
+  }
+}
